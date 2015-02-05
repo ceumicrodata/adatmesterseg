@@ -1,0 +1,2 @@
+# adatmesterseg
+Rajk Adatmesterség kurzus
