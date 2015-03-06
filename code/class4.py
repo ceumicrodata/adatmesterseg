@@ -76,6 +76,9 @@ for tree_index in [3, 2, 1, 0]:
     if tree_index == 1:
         break
 
+for tree in forest:
+    cut_tree(tree)
+
 def new_matrix(rows, columns):
     matrix = [ [0] * columns for i in range(rows)]
     return matrix
