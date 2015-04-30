@@ -42,6 +42,12 @@ osszes_szavazat = df['szavazat'].sum()
 
 group_partok_sum = df['szavazat'].groupby(df['part']).sum()
 
-group_partok_sum.apply()
+def calculate_percent(i):
+    szazalekos_eredmeny = 100 * i / float(osszes_szavazat)
+    return szazalekos_eredmeny
 
-def calculate(i):
+print group_partok_sum.apply(calculate_percent)
+
+group_partok_megye_sum = group_megye_part.sum()
+
+print group_partok_megye_sum.groupby(level=0).apply(calculate_percent)
