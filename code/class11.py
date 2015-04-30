@@ -30,7 +30,7 @@ print df.drop_duplicates()
 print df['part'].unique()
 
 print df.groupby('part').mean()
-group_megye_part = df['szavazat'].groupby([df['part'], df['megye']]).mean()
+group_megye_part = df['szavazat'].groupby([df['megye'], df['part']])
 print group_megye_part.mean()
 print group_megye_part.sum()
 print group_megye_part.min()
