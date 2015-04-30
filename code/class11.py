@@ -8,7 +8,7 @@ frame = pandas.DataFrame(data)
 
 print frame
 
-df = pandas.read_csv('ass9-sample.csv')
+df = pandas.read_csv('../data/result_part.csv')
 print df.head()
 
 print df[:100]
@@ -20,8 +20,13 @@ df['uj'] = 'NaN'
 
 print df.tail()
 
-df['szavazat'] = df['szavazat'].str.strip(' ')
-
 new = df[df['megye'] == 1][df['telepules'] == 1][df['szavazokor'] == 1]
 print df[df.megye == 1][df.telepules == 1][df.szavazokor == 1]
 print new
+
+print df.describe()
+print df.drop_duplicates()
+
+print df['part'].unique()
+
+print df.groupby('part').mean()
