@@ -35,3 +35,5 @@ print group_megye_part.mean()
 print group_megye_part.sum()
 print group_megye_part.min()
 print group_megye_part.median()
+
+print group_megye_part.mean().unstack('part')
