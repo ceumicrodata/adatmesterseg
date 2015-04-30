@@ -20,5 +20,7 @@ df['uj'] = 'NaN'
 
 print df.tail()
 
-print df['szavazat']
+df['szavazat'] =
 
+new = df[df['megye'] == 1]
+print new
