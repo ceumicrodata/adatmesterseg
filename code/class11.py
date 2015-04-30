@@ -20,7 +20,7 @@ df['uj'] = 'NaN'
 
 print df.tail()
 
-df['szavazat'] =
+df['szavazat'] = df['szavazat'].str.strip(' ')
 
 new = df[df['megye'] == 1]
 print new
