@@ -17,3 +17,8 @@ print df['part']
 print df['szavazat']
 
 df['uj'] = 'NaN'
+
+print df.tail()
+
+print df['szavazat']
+
