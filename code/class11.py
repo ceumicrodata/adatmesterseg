@@ -37,3 +37,11 @@ print group_megye_part.min()
 print group_megye_part.median()
 
 print group_megye_part.mean().unstack('part')
+
+osszes_szavazat = df['szavazat'].sum()
+
+group_partok_sum = df['szavazat'].groupby(df['part']).sum()
+
+group_partok_sum.apply()
+
+def calculate(i):
